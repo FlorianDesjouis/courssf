@@ -1,0 +1,23 @@
+route:
+    resource: "@RouteBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+platform_page1:
+    path: /platform/page1
+    defaults: {_controller: RouteBundle:showPageOne}
+
+platform_page2:
+    path: /platform/page2
+    defaults: {_controller: RouteBundle:showPageTwo}
+    
+platform_page3:
+    path: /platform/page3
+    defaults: {_controller: RouteBundle:showPageThree}
+    
+    
+
